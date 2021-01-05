@@ -1,0 +1,98 @@
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100%;
+        margin: 15px auto;
+        border: 1px solid black;
+        border-radius: 25px;
+        width: 700px;
+    }
+    /*style for header*/
+    
+    header img {
+        float: left;
+        margin-right: 30px;
+    }
+    
+    header h2 {
+        font-size: 170%;
+        color: #800000;
+        margin-left: 30px;
+    }
+    
+    header h3 ul li {
+        font-size: 130%;
+        font-style: italic;
+        margin-left: 30px;
+        color: #800000;
+        border: 1px solid black;
+    }
+    
+    p {
+        padding-bottom: .5em;
+    }
+    
+    li {
+        margin-left: 30px;
+        padding-bottom: .35em;
+    }
+    
+    img {
+        margin-left: 30px;
+        padding-bottom: 1em;
+    }
+    
+    h1 {
+        font-size: 150%;
+        margin-left: 30px;
+        padding-top: .3em;
+        padding-bottom: .3em;
+    }
+    
+    h2 {
+        font-size: 130%;
+        color: #800000;
+        margin-left: 30px;
+        padding-top: .5em;
+        padding-bottom: .25em;
+    }
+    
+    h3 {
+        font-size: 105%;
+        margin-left: 30px;
+        padding-bottom: .25em;
+    }
+    
+    a {
+        font-style: italic;
+        margin-left: 30px;
+    }
+    
+    sup {
+        text-shadow: 0 1px black;
+    }
+    
+    hgroup {
+        border-bottom: 2px solid #c91945;
+        background-color: aqua;
+    }
+    
+    i {
+        margin-left: 30px;
+    }
+    
+    blockquote {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    
+    ul {
+        padding-bottom: .25em;
+        padding-left: 1.25em;
+    }
+    
+    footer p {
+        border-top: 2px solid #c91945;
+        padding-top: 5px;
+        text-align: center;
+        background-color: aqua;
+    }

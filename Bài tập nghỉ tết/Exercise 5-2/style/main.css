@@ -1,0 +1,33 @@
+        body {
+            width: 370px;
+            /*Chiều dài của đoạn văn bản*/
+            border: 1px solid black;
+            /*Thẻ border để tạo khung viền màu đen có kích cỡ 1px*/
+            margin: 20px;
+            /*Thẻ margin tạo khoảng cách giữa body và web*/
+            margin-left: 200px;
+            /*Tạo khoảng cách 200 pixel từ trái qua body*/
+            margin-right: 200px;
+            /*Tạo khoảng cách 200 pixel từ phải qua body*/
+            box-shadow: 2px 2px 3px 3px black;
+            /*Tạo đổ bóng 2 pixel top tới 2 pixel right tới 3 pixel bottom tới 3 pixel left*/
+        }
+        
+        h2 {
+            text-align: center;
+            /*Canh giữ đoạn văn bản*/
+            border: 2px solid red;
+            /*Tạo khung bao bọc đoạn văn bản*/
+            margin-left: 26px;
+            /*Tạo khoảng cách 26 pixel từ trái qua body*/
+            margin-right: 200px;
+            /*Tạo khoảng cách 200 pixel từ phải qua body*/
+            border-radius: 5px;
+            /*Làm tròn góc khung */
+            box-shadow: 2px 2px 3px 3px black;
+            /*Tạo đổ bóng 2 pixel top tới 2 pixel right tới 3 pixel bottom tới 3 pixel left*/
+            padding-right: 10px;
+            /*Khoảng cách lề web tới văn phảm từ phải qua 100 pixel */
+            width: 300px;
+            /*Chiều dài của đoạn văn bản*/
+        }
