@@ -1,0 +1,275 @@
+html {
+    background-color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*Định dạng kiểu chữ cho trang website*/
+    font-size: 100%;
+    /*Kích thước của trang website*/
+    width: 99%;
+    /*Chiều dài chiếm 99% trang website*/
+    max-width: 850px;
+    /*Chiều dài giới hạn của trang website*/
+    background-color: white;
+    /*Xét màu giao diện website*/
+    margin: 0 auto;
+    /*Khoảng cách body và viền trang website*/
+    border: 3px solid #B40404;
+    /*Tạo khung viền cho nội dung và xét màu*/
+    display: grid;
+    /*Phân bố cục*/
+    grid-template: repeat(4, auto) / repeat(auto, 1fr);
+    /*Thiết kế bố cục gồm 2 rox với kích thước tự động và 2 colum với kích thước tự động và 1fr là khoảng còn lại */
+    grid-template-areas: "head" "navi" "main" "foot";
+    /*Bố cục bao gồm head navi_menu main footer*/
+}
+
+main section {
+    padding-left: 4.16%;
+    /*Khoảng cách từ trang và nội dung bên trái là 4.16% khoảng cách trang web*/
+    padding-right: 4.16%;
+    /*Khoảng cách từ trang và nội dung bên phải là 4.16% khoảng cách trang web*/
+    padding-bottom: 20px;
+    /*Khoảng cách từ trang và nội dung từ dưới lên là 20 pixel khoảng cách trang web*/
+    float: right;
+    /*Nội dung main sẽ nằm phía bên phải của trang*/
+}
+
+main aside {
+    padding-left: 4.16%;
+    /*Khoảng cách từ trang và nội dung bên trái là 4.16% khoảng cách trang web*/
+    padding-bottom: 20px;
+    /*Khoảng cách từ trang và nội dung từ dưới lên là 20 pixel khoảng cách trang web*/
+    float: right;
+}
+
+
+/*********************************** Header *******************************************************/
+
+header {
+    background-image: linear-gradient( 50deg, #f6bb73 0%, #f6bb73 5%, white 30%, white 25%, #f6bb73 77%, #f6bb73 100%);
+    /*Tô màu cho thanh tiêu đề bằng cách sử dụng đồ bóng theo % màu*/
+    grid-area: head;
+    /*Phân bố header theo bố cục grid đã tạo*/
+    display: grid;
+    /*Xác định phần header theo grid bố cục định sẵn*/
+    grid-template: auto auto / auto 1fr;
+    /*Xếp header theo bố cục 2 row khoảng cách tự động theo kích thước trang và 2 colum với kích thước auto tùy theo nội dung và thay đổi trang web và khoảng cách còn lại*/
+    grid-template-areas: "logo heading-top" "logo heading-bottom";
+    /*Xác định bố cục nội dung sẽ gắn liền logo header img sẽ nằm bên giữa bên trên và dưới*/
+}
+
+header img {
+    grid-area: logo;
+    /*Định dạng bố cục logo*/
+    max-width: 80px;
+    /*Chiều dài tối đa của hình ảnh trong phần header là 80 pixel*/
+    min-width: 40px;
+    /*Chiều dài nhỏ nhất của hình anh trong phần header là 40 pixel*/
+    margin-left: 1.2em;
+    /*Khoảng cách từ bên trái nội dung và ảnh là 1.2em*/
+    margin-right: 1.2em;
+    /*Khoảng cách từ bên phải nội dung và ảnh là 1.2em*/
+}
+
+header h2 {
+    font-size: 170%;
+    /*Kích cỡ của tiêu đề h2 trong header là 170% kích thước nội dung*/
+    color: #800000;
+    /*Màu chữ của nội dung là màu đà */
+    margin: 0px;
+    /*Khoảng cách từ boder và nội dung không có*/
+    grid-area: heading-top;
+    /*Bố cục của nội dung thẻ h2 sẽ theo phần trên của header kế bên ảnh logo images*/
+}
+
+header h3 {
+    font-size: 130%;
+    /*Kích cỡ của tiêu đề h3 trong header là 130% kích thước nội dung*/
+    font-style: italic;
+    /*Định dạng kiểu chữ của nội dung là italic*/
+    margin: 0px;
+    /*Khoảng cách từ trang và nội dung không có*/
+    grid-area: heading-bottom;
+    /*Bố cục của nội dung thẻ h3 sẽ theo phần dưới của header kế bên ảnh logo images*/
+}
+
+
+/*********************************** Menu *******************************************************/
+
+#nav_menu {
+    grid-area: navi;
+    /*Xếp bố cục menu và grid navi đã thiết kế sẵn*/
+}
+
+#nav_menu ul {
+    margin: 0;
+    /*Khoảng cách từ trang và thanh menu không có*/
+    padding: 0;
+    /*Khoảng cách từ boder và nội dung thanh menu không có*/
+    list-style: none;
+    /*Xóa dấu . trước những danh mục menu*/
+    position: relative;
+    /*Dùng để thiết lập phần tử sử dụng thuộc tính position mà không ảnh hưởng đến việc hiển thị ban đầu*/
+    display: grid;
+    /*Bố cục theo grid định dạng sẵn*/
+    grid-template: auto / repeat(5, 1fr);
+    /*Sắp xếp theo bố cục 1 row và 5 colum kích thước định sẵn*/
+}
+
+#nav_menu ul li ul {
+    display: none;
+    /*Xóa bỏ dấu . phía trước*/
+    padding: 0;
+    /*Khoảng cách từ trang và nội dung thanh menu không có*/
+}
+
+#nav_menu ul li ul li {
+    float: none;
+    position: relative;
+}
+
+#nav_menu ul li ul li ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 20%;
+}
+
+#nav_menu ul li.lastitem ul li ul {
+    position: absolute;
+    left: -100%;
+    top: 0;
+}
+
+#nav_menu ul li:hover>ul {
+    display: block;
+    position: absolute;
+    width: 20%;
+}
+
+#nav_menu>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #ec142a;
+    color: white;
+    font-weight: bold;
+}
+
+#nav_menu ul li a.current {
+    color: white;
+}
+
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
+    background-color: orchid;
+    color: rgb(83, 30, 143);
+}
+
+
+/*********************************** Main *******************************************************/
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template: auto / 20% 1fr;
+    gap: 1%;
+    grid-template-areas: "side sec";
+}
+
+aside {
+    margin-left: 10%;
+    grid-area: side;
+}
+
+aside h2 {
+    font-size: 100%;
+}
+
+aside h3 {
+    font-size: 100%;
+}
+
+aside img {
+    padding-bottom: 1em;
+}
+
+aside a {
+    color: black;
+}
+
+section {
+    grid-area: sec;
+}
+
+section h1 {
+    font-size: 150%;
+    padding-top: .5em;
+    padding-bottom: .25em;
+    margin: 0px;
+}
+
+section article img {
+    max-width: 50%;
+    min-width: 200px;
+    float: right;
+    margin: 1em 0 1em 1em;
+    border: 1px solid #800000;
+}
+
+article p #article_1 {
+    padding: .5em 0;
+}
+
+article figure {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin: 0 0 2em;
+    padding-bottom: 1em;
+}
+
+article figure figcaption {
+    font-weight: bold;
+    border-bottom: 2px solid #800000;
+    color: tomato;
+}
+
+section h2 {
+    font-size: 120%;
+    color: #800000;
+}
+
+section ul {
+    padding-bottom: .25em;
+    padding-left: 1.25em;
+}
+
+section li {
+    padding-bottom: .35em;
+}
+
+
+/*********************************** Footer *******************************************************/
+
+footer {
+    background-color: #ec142a;
+    grid-area: foot;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin: 0px;
+}
