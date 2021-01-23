@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercise</title>
+    <link rel="shortcut icon" href="./images/logo.gif" />
+    <meta name="viewport " content="width=device-width, initial-scale=1 ">
+    <link rel="stylesheet " href="styles/main.css ">
+    <link rel="stylesheet " href="./plugin/SlickNav/slicknav.css " />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
+    <script src="./plugin/SlickNav/jquery.slicknav.min.js "></script>
+    <script type="text/javascript ">
+        $(document).ready(function() {
+            $("#nav_menu ").slicknav({
+                prependTo: "#mobile_menu "
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Mở đầu tiêu đề trang -->
+    <header>
+        <img src="images/logo.gif " alt="Town Hall Logo ">
+        <div class="header_right">
+            <h2>San Joaquin Valley Town Hall</h2>
+            <h3>Celebrating our 75<sup>th</sup> Year</h3>
+        </div>
+    </header>
+    <!-- Kết thúc tiêu đề trang -->
+    <!-- Mở đầu thanh menu  -->
+
+    <nav id="nav_menu">
+        <ul>
+            <li><a class="current" href="#">Home</a></li>
+            <li>
+                <a href="#">Speakers</a>
+
+            </li>
+            <li><a href="#">Lumcheons</a></li>
+            <li><a href="#">Tickets</a></li>
+            <li class="lastitem"><a href="#">About Us</a>
+                <ul>
+                    <li>
+                        <a href="#">Menu 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu 3</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu 4</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+    <!-- Kết thúc thanh menu-->
+    <!-- Bắt đầu thiết kế nội dung cho trang-->
+    <!-- Thiết kế nội dung nằm bên phải trang -->
+    <main>
+        <section>
+            <h2>About Our Luncheons</h2>
+            <p>Make reservations for lunch in the lower lobby of the William Saroyan Theater after lecture. These informal sessions provide an excellent opportunity to talk with the speaker.
+            </p>
+            <article>
+                <h2>Season luncheon tickets: $120</h2>
+                <p>These tickets can be ordered at the same time as the season lecture ticket</p>
+                <h2>Individual lunchoen tickets: $25</h2>
+                <p>A limited number of these tickets are available and can be purchased by calling 559 555 1212. These tickets must be purchased by the Friday prior to the lecture.
+                </p>
+                <div id="table">
+                    <h2>The luncheon schedule</h2>
+                    <table>
+                        <tr>
+                            <P>
+                                <thead class="table_1">
+                                    <tr>
+                                        <th>Year</th>
+                                        <th>Date</th>
+                                        <th>Speaker</th>
+                                        <th>Cost</th>
+                                    </tr>
+                                </thead>
+                            </P>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">2017</td>
+                                    <td>October 19</td>
+                                    <td>Jeffrey Toobin</td>
+                                    <td>$25</td>
+                                </tr>
+                                <tr>
+                                    <td>November 16</td>
+                                    <td>Adress Ross Sorkin</td>
+                                    <td>$25</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4">2018</td>
+                                    <td>January 18</td>
+                                    <td>Amy Chua</td>
+                                    <td>$25</td>
+                                </tr>
+                                <tr>
+                                    <td>Frbruary 16</td>
+                                    <td>Scolt Sampson</td>
+                                    <td>$25</td>
+                                </tr>
+                                <tr>
+                                    <td>March 21</td>
+                                    <td>Carlos Eire</td>
+                                    <td>$25</td>
+                                </tr>
+                                <tr>
+                                    <td>April 18</td>
+                                    <td>Ronan Tynan</td>
+                                    <td>$25</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3">Cost of 6 individual luncheon tickets</td>
+                                    <td>$150</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"> Cost of 6 individual luncheon tickets</td>
+                                    <td>$120</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">Savings</td>
+                                    <td>$30</td>
+                                </tr>
+                            </tfoot>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </article>
+        </section>
+        <!-- Kết thúc thiết kế nội dung nằm bên phải trang -->
+        <aside>
+            <h2>Guest Speakers</h2>
+            <h3>October</h3>
+            <a href="jeffreytoobin.html">Jeffrey Toobin</a>
+            </p>
+            <img src="../ch09-exercise/images/jeffreytoobin.jfif" alt="Jeffrey Toobin">
+            <p>
+                <h3>November</h3>
+                <a href="AndrewRossSorkin.html">Andrew Ross </a>
+            </p>
+            <img src="../ch09-exercise/images/andrewrosssorkin.jfif" alt="Jeffrey Toobin">
+            <p>
+                <h3>January</h3>
+                <a href="AmyChua.html">Amy Chua</a>
+            </p>
+            <img src="../ch09-exercise/images/amychua.jfif" alt="Jeffrey Toobin">
+        </aside>
+    </main>
+    <footer>
+        <p>&copy;2015. San Joaquin Valley Town Hall, Fresno. CA 93755</p>
+    </footer>
+</body>
+
+</html>
