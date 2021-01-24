@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercise</title>
+    <link rel="shortcut icon" href="./images/logo.gif" />
+    <meta name="viewport " content="width=device-width, initial-scale=1 ">
+    <link rel="stylesheet " href="styles/main.css ">
+    <link rel="stylesheet " href="./plugin/SlickNav/slicknav.css " />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
+    <script src="./plugin/SlickNav/jquery.slicknav.min.js "></script>
+    <script type="text/javascript ">
+        $(document).ready(function() {
+            $("#nav_menu ").slicknav({
+                prependTo: "#mobile_menu "
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Mở đầu tiêu đề trang -->
+    <header>
+        <img src="images/logo.gif " alt="Town Hall Logo ">
+        <div class="header_right">
+            <h2>San Joaquin Valley Town Hall</h2>
+            <h3>Celebrating our 75<sup>th</sup> Year</h3>
+        </div>
+    </header>
+    <!-- Kết thúc tiêu đề trang -->
+    <!-- Mở đầu thanh menu  -->
+
+    <nav id="nav_menu">
+        <ul>
+            <li><a class="current" href="#">Home</a></li>
+            <li>
+                <a href="#">Speakers</a>
+
+            </li>
+            <li><a href="#">Lumcheons</a></li>
+            <li><a href="#">Tickets</a></li>
+            <li class="lastitem"><a href="#">About Us</a>
+                <ul>
+                    <li>
+                        <a href="#">Menu 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu 3</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu 4</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+    <!-- Kết thúc thanh menu-->
+    <!-- Bắt đầu thiết kế nội dung cho trang-->
+    <!-- Thiết kế nội dung nằm bên phải trang -->
+    <main>
+        <section>
+            <h1>Order Form</h1>
+            <form action="">
+                <fieldset>
+                    <legend>Member information</legend>
+                    <label for="email">E-Mail:</label>
+                    <input type="email" name="email" id="email" autofocus required><br>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" name="firstname" id="firstname" required><br>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname" required><br>
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="address"><br>
+                    <label for="city">City:</label>
+                    <input type="text" name="city" id="city" required><br>
+                    <label for="state">State:</label>
+                    <input type="text" name="state" id="state" required placeholder="2-character code"><br>
+                    <label for="zipcode">ZIP code:</label>
+                    <input type="number" name="zipcode" id="zipcode" required pattern="\d{5}(\d{9})?" title="Nhập 5 hoặc 9 kí tự" placeholder="5 or 9 digits"><br>
+                    <label for="phonenumber">Phone Number:</label>
+                    <input type="tel" name="phonenumber" id="phonenumber" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Nhập đúng định dạng" placeholder="999-999-9999">
+                </fieldset>
+                <fieldset>
+                    <legend>Ordering information</legend>
+                    <label for="ordertype">Order Type:</label>
+                    <select name="ordertype" id="ordertype">
+                        <option value="">Member Package</option>
+                        <option value="">Member Package 1</option>
+                    </select><br>
+                    <label for="numbertickets">Number of Tickets:</label>
+                    <input type="number" name="numbertickets" id="numbertickets" required><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment Method</legend>
+                    <input type="radio" name="billme" id="billme" required>
+                    <label for="billme">Bill Me</label>
+                    <input type="radio" name="creditcard" id="creditcard" required>
+                    <label for="creditcard">Credit Card</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Credit Card information</legend>
+                    <label for="cardtype">Card Type:</label>
+                    <select name="cardtype" id="cardtype">
+                        <option value="">Visa</option>
+                        <option value="">Visa 1</option>
+                    </select><br>
+                    <label for="numbertickets">Card Number:</label>
+                    <input type="number" name="cardnumber" id="cardnumber" required pattern="\d{16}" title="nhap du 16 so" placeholder="16 digits"><br>
+                    <label for="expiration">Expiration date:</label>
+                    <select name="month" id="month">
+                        <option value="">January</option>
+                        <option value="">January 1</option>
+                    </select>
+                    <select name="year" id="year">
+                        <option value="">2017</option>
+                        <option value="">2018</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Submit Your Order</legend>
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                    <input type="reset" name="reset" id="reset" value="Reset Fields">
+                </fieldset>
+            </form>
+        </section>
+        <!-- Kết thúc thiết kế nội dung nằm bên phải trang -->
+        <aside>
+            <h2>Guest Speakers</h2>
+            <h3>October</h3>
+            <a href="jeffreytoobin.html">Jeffrey Toobin</a>
+            </p>
+            <img src="../ch09-exercise/images/jeffreytoobin.jfif" alt="Jeffrey Toobin">
+            <p>
+                <h3>November</h3>
+                <a href="AndrewRossSorkin.html">Andrew Ross </a>
+            </p>
+            <img src="../ch09-exercise/images/andrewrosssorkin.jfif" alt="Jeffrey Toobin">
+            <p>
+                <h3>January</h3>
+                <a href="AmyChua.html">Amy Chua</a>
+            </p>
+            <img src="../ch09-exercise/images/amychua.jfif" alt="Jeffrey Toobin">
+        </aside>
+    </main>
+    <footer>
+        <p>&copy;2015. San Joaquin Valley Town Hall, Fresno. CA 93755</p>
+    </footer>
+</body>
+
+</html>
